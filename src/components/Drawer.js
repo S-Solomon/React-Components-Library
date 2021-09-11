@@ -21,13 +21,13 @@ export default Drawer
 const DrawerStyled = styled.nav`
     height: 100%;
     background: white;
-    box-shadow: 2px 0px 5px rgba(0,0,0,0.5);
+    box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
     left: 0;
     width: 250px;
     z-index: 200;
-    transition: all 0.5s ease-in-out;
+    /* transition: all 0.3s ease-out; */
     ul {
         list-style: none;
         display: flex;
