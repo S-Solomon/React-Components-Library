@@ -3,7 +3,6 @@ import styled from 'styled-components'
 
 const Drawer = () => {
     return (
-        <>
         <DrawerStyled>
             <ul>
                 <li><a href="/">Home</a></li>
@@ -11,7 +10,6 @@ const Drawer = () => {
                 <li><a href="/">Blogs</a></li>
             </ul>
         </DrawerStyled>
-        </>
     )
 }
 
@@ -27,7 +25,7 @@ const DrawerStyled = styled.nav`
     left: 0;
     width: 250px;
     z-index: 200;
-    /* transition: all 0.3s ease-out; */
+    transition: width 0.5s ease-in-out;
     ul {
         list-style: none;
         display: flex;
