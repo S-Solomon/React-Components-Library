@@ -4,19 +4,19 @@
 const data = [
     {
         question: 'Question 1',
-        answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur minima deserunt, eligendi quia ut numquam odio. Vero distinctio saepe sit magnam? Voluptatem rem quibusdam consectetur praesentium vel, perferendis tempora et!',
+        answer: 'Lorem ipsum cing elit. Consectetur minima deserunt, pe sit magnam? Voluptatem rem quibusdam consectetur praesentium vel, perferendis tempora et!',
     },
     {
         question: 'Question 2',
-        answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur minima deserunt, eligendi quia ut numquam odio. Vero distinctio saepe sit magnam? Voluptatem rem quibusdam consectetur praesentium vel, perferendis tempora et!',
+        answer: 'Lorem ipsum dolotetur minima deserunt, eligendi quia ut numquam odio. Vero distinctio saepe sit magnam? Voluptatem rem quibusdam consectetur praesentium vel, perferendis tempora et!',
     },
     {
         question: 'Question 3',
-        answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur minima deserunt, eligendi quia ut numquam odio. Vero distinctio saepe sit magnam? Voluptatem rem quibusdam consectetur praesentium vel, perferendis tempora et!',
+        answer: 'Lorem ipsum dolor sit elit. Consectetur minima deserunt, eligendi quia ut numquam odio. Vero distinctio saepe sit magnam? Voluptatem rem quibusdam consectetur praesentium vel, perferendis tempora et!',
     },
     {
         question: 'Question 4',
-        answer: 'Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur minima deserunt, eligendi quia ut numquam odio. Vero distinctio saepe sit magnam? Voluptatem rem quibusdam consectetur praesentium vel, perferendis tempora et!',
+        answer: 'Lorem ipsum dolor sit amet consectetur, . Consectetur minima deserunt, eligendi quia ut numquam odio. Vero distinctio saepe sit magnam? Voluptatem rem quibusdam consectetur praesentium vel, perferendis tempora et!',
     }
 
 ]

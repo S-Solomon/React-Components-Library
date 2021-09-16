@@ -58,7 +58,7 @@ const Container = styled.div`
     display: flex;
     flex-direction: column;
     position: relative;
-    width: 500px;
+    width: 600px;
     height: 300px;
     background: #f1f1f1;
     margin: 100px auto 0;
