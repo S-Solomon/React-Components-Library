@@ -2,6 +2,8 @@
 // import Tabs from './components/tabs/Tabs'
 // import Accordion from "./components/accordion/Accordion";
 
+import SideDrawer from "./components/drawer/SideDrawer";
+
 
 function App() {
 
@@ -10,6 +12,7 @@ function App() {
       {/* <Navbar /> */}
       {/* <Tabs /> */}
       {/* <Accordion /> */}
+      <SideDrawer />
     </main>
   );
 }
