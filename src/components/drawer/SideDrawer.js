@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { GiHamburgerMenu } from 'react-icons/gi'
+import { Link } from 'react-router-dom'
 
 const SideDrawer = () => {
     const [showNav, setShowNav] = useState(false)
@@ -12,9 +13,15 @@ const SideDrawer = () => {
                 <SideNavStyled>
                     <nav className={showNav ? 'nav active' : 'nav'}>
                         <ul>
-                            <li><a href="/">Home</a></li>
-                            <li><a href="/">About Us</a></li>
-                            <li><a href="/">Contact Us</a></li>
+                            <li>
+                                <Link to="/" activeClassName="active-class" exact>Home</Link>
+                            </li>
+                            <li>
+                                <Link to="/about" activeClassName="active-class" exact>About Us</Link>
+                            </li>
+                            <li>
+                                <Link to="/contact" activeClassName="active-class" exact>Contact Us</Link>
+                            </li>
                         </ul>
                     </nav>
                 </SideNavStyled>
@@ -27,11 +34,14 @@ export default SideDrawer
 
 const HeaderStyled = styled.header`
     padding: 30px;
-    /* background: white;  */
-    background: #011627;
+    background: white; 
+    /* background: #011627; */
     height: 40px;
     color: white;
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     svg {
         font-size: 30px;
         cursor: pointer;
@@ -56,14 +66,22 @@ const SideNavStyled = styled.div`
         display: flex;
         justify-content: center;
         align-content: center;
+        top: 0;
     }
     .nav.active {
         left: 0;
     }
     ul {
         padding: 0;
-
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
         li {
+            .active-class {
+                color: white;
+                background: #057FFF;
+            }
             list-style: none;
             margin: 10px 0;
             a {
@@ -75,6 +93,10 @@ const SideNavStyled = styled.div`
                 border-radius: 6px;
                 &:hover, &:active {
                     background: #172b4d;
+                }
+                .active-class {
+                    color: white;
+                    background: #057FFF;
                 }
             }
         }
