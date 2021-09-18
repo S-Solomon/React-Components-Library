@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Backdrop = ({ closeBackdrop }) => {
+const Backdrop = ( { closebackdrop} ) => {
     return (
-        <BackdropStyled onClick={closeBackdrop}>
+        <BackdropStyled onClick={closebackdrop}>
             
         </BackdropStyled>
     )
@@ -19,6 +19,6 @@ const BackdropStyled = styled.div`
     width: 100%;
     height: 100%;
     background: rgba(0,0,0,0.3);
-    z-index: 100;
+    z-index: -1;
     cursor: pointer;
 `;

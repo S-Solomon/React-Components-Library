@@ -2,9 +2,14 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { Link } from 'react-router-dom'
+import Backdrop from './Backdrop'
 
 const SideDrawer = () => {
     const [showNav, setShowNav] = useState(false)
+
+    const backdropClickHandler = () => {
+        setShowNav(false)
+    }
 
     return (
         <>
@@ -25,6 +30,7 @@ const SideDrawer = () => {
                         </ul>
                     </nav>
                 </SideNavStyled>
+                {showNav ? <Backdrop closebackdrop={backdropClickHandler}/>: null}
             </HeaderStyled>
         </>
     )
@@ -57,7 +63,8 @@ const HeaderStyled = styled.header`
 const SideNavStyled = styled.div`
     .nav {
         width: 240px;
-        background: #011627;
+        /* background: #011627; */
+        background: #7b7fda;
         position: fixed;
         height: 100vh;
         padding: 0 30px;
@@ -67,6 +74,7 @@ const SideNavStyled = styled.div`
         justify-content: center;
         align-content: center;
         top: 0;
+        box-shadow: 1px 0px 7px rgba(0, 0, 0, 0.5);
     }
     .nav.active {
         left: 0;
