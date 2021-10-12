@@ -49,12 +49,25 @@ const Wrapper = styled.div`
     align-items: center;
     .accordion {
         position: relative;
-        width: 600px;
+        width: 250px;
+        @media screen and (min-width: 300px){
+            width: 290px;
+        }
+        @media screen and (min-width: 400px){
+            width: 310px;
+        }
+        @media screen and (min-width: 700px){
+            width: 600px;
+        }
+        @media screen and (min-width: 1000px){
+            width: 800px;
+        }
         .item {
             background: #f0ebe1;
             background: white;
             /* margin-bottom: 5px; */
             padding: 10px 20px;
+            border-bottom: 1px solid #E5ECF4;
             .title {
                 display: flex;
                 h2 {
@@ -117,6 +130,7 @@ const Wrapper = styled.div`
                 line-height: 1.9;
                 letter-spacing: 1.1px;
                 font-size: 1.3rem;
+                margin-left: 2.4rem;
             }
             .content.show {
                 height: auto;
