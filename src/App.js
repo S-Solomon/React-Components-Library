@@ -1,6 +1,6 @@
-import Navbar from './components/navbar/Navbar';
+// import Navbar from './components/navbar/Navbar';
 // import Tabs from './components/tabs/Tabs'
-// import Accordion from "./components/accordion/Accordion";
+import Accordion from "./components/accordion/Accordion";
 // import SideDrawer from "./components/drawer/SideDrawer";
 
 import { Switch, Route } from 'react-router-dom'
@@ -14,22 +14,22 @@ function App() {
 
   return (
     <main>
-      <Navbar />
+      {/* <Navbar /> */}
       {/* <Tabs /> */}
-      {/* <Accordion /> */}
+      <Accordion />
       {/* <SideDrawer /> */}
 
       <Switch>
         <Route path="/" exact>
           <Home />
         </Route>
-        <Route path="/about" exact>
+        <Route path="/about" >
           <About />
         </Route>
-        <Route path="/contact" exact>
+        <Route path="/contact" >
           <Contact />
         </Route>
-        <Route path="/blog" exact>
+        <Route path="/blog" >
           <Blog />
         </Route>
       </Switch>
