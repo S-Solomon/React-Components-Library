@@ -30,7 +30,7 @@ const SideDrawer = () => {
                         </ul>
                     </nav>
                 </SideNavStyled>
-                {showNav ? <Backdrop closebackdrop={backdropClickHandler}/>: null}
+                {showNav ? <Backdrop closebackdrop={backdropClickHandler} />: null}
             </HeaderStyled>
         </>
     )
